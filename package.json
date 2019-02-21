@@ -10,9 +10,6 @@
     "build": "webpack --progress --config ./resources/config/webpack.config.js",
     "build:production": "webpack --progress -p --config ./resources/config/webpack.config.js"
   },
-  "dependencies": {
-    "brace": "*"
-  },
   "devDependencies": {
     "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.0.0",
