@@ -19,8 +19,9 @@ function appendAce( $el ) {
 			textarea.css('display', 'none').removeClass('aced');
 			var editor = ace.edit(editDiv[0]);
 			editor.renderer.setShowGutter(true);
-			editor.getSession().setValue(textarea.val());
-			editor.getSession().setMode({path:"ace/mode/html", inline:true});
+      editor.getSession().setValue(textarea.val());
+      editor.getSession().setUseWorker(false);
+      editor.getSession().setMode({path:"ace/mode/html", inline:true});
 			editor.setTheme("ace/theme/ambiance");
 
 			// copy back to textarea on form submit...
