@@ -45,6 +45,7 @@ class Init
             }
 
             // Otherwise include our Javascript bundle
+            wp_enqueue_code_editor(array( 'type' => 'text/html' ));
             wp_enqueue_script('acf-google-tag-manager-snippets-scripts', GTMSNIPPETS_PLUGIN_URL . 'dist/app.bundle.js', 'jQuery');
         });
 
