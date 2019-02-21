@@ -1,0 +1,20 @@
+{
+  "name": "google-tag-manager-snippets",
+  "version": "1.0",
+  "author": "Michael W. Delaney",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mwdelaney/google-tag-manager-snippets.git"
+  },
+  "scripts": {
+    "build": "webpack --progress --config ./resources/config/webpack.config.js",
+    "build:production": "webpack --progress -p --config ./resources/config/webpack.config.js"
+  },
+  "dependencies": {
+    "brace": "*"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  }
+}
